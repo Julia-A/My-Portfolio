@@ -1,0 +1,214 @@
+* {
+    font-family: 'Quicksand', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fffcf2;
+}
+
+
+/* Global styles */
+.container {
+    max-width: 1000px;
+    width: 80%;
+    margin: auto;
+    border: 1px solid #3B413C;
+    box-shadow: 0px 0px 20px #403d39;
+    background-color: #e7ecef;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 40px;
+    color: #274c77;
+}
+
+.left {
+    border-right: 2px solid #274c77;
+}
+
+@media (max-width:750px) {
+    .title {
+        font-size: 23px;
+        margin-top: 30px;
+    }
+
+    .left {
+        border-right: none
+    }
+}
+/* Global Styles */
+
+
+/* Main Header */
+.main-header {
+    display: flex;
+    padding: 25px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: black;
+}
+
+.main-header .name-and-title h1 {
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive !important;
+}
+
+.main-header .name-and-title p {
+    color: #a3cef1;
+    margin-block: 5px;
+}
+
+.main-header .personal-information p, .main-header .personal-information address {
+    margin-block: 5px;
+}
+
+.main-header .personal-information p a {
+    color: #a3cef1;
+}
+
+@media (max-width:750px) {
+    .main-header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+/* Main Header */
+
+/* Work Experience */
+.work-experience-holder {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.work-experience .experience {
+    padding: 15px;
+}
+
+@media (max-width:750px) {
+    .work-experience-holder {
+        display: block;
+        text-align: center;
+        border: none;
+    }
+
+    .work-experience .experience {
+        border-bottom: 2px dashed #274c77;
+    }
+
+    hr {
+        display: none;
+    }
+}
+/* Work Experience */
+
+/* Education */
+.educations .education-holder {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.education {
+    padding: 25px;
+}
+
+@media (max-width:750px) {
+    .educations .education-holder {
+        text-align: center;
+        display: block;
+    }
+
+    /* .education {
+        border-bottom: 2px dashed #274c77;
+    } */
+}
+/* Education */
+
+/* Gallery */
+.gallery-holder p {
+    margin-block: 10px;
+    text-align: center;
+}
+
+.gallery-holder ul img {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+}
+
+.lSPager {margin-top: -25px !important;}
+/* Gallery */
+
+/* Skills & Links & Certificates styling*/
+.skills,
+.links,
+.certificates {
+    padding: 0px 50px 25px;
+}
+
+.skills ul,
+.links ul,
+.certificates ul {
+    margin-top: 10px;
+}
+
+.skills ul li,
+.links ul li,
+.certificates ul li {
+    padding: 7px 14px;
+    margin-left: 5px;
+    margin-top: 10px;
+    border: 2px solid #274c77;
+    border-radius: 5px;
+    list-style-type: circle;
+    /*margin-bottom: 10px;
+    background-color: #a3cef1; */
+}
+
+@media (max-width:750px) {
+    .skills,
+    .links,
+    .certificates {
+        padding: 0px 30px 25px;
+        margin-top: 5px;
+    }
+
+    .skills ul li,
+    .links ul li,
+    .certificates ul li a {
+        display: inline-block;
+    }
+}
+/* Skills & Links*/
+
+/* Links */
+.links ul li a,
+.certificates ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.links ul li a:hover,
+.certificates ul li a:hover {
+    color: #274c77;
+}
+/* Links */
+
+/* footer */
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+/* footer */
